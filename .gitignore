@@ -1,0 +1,7 @@
+## Vagrant stuff
+.vagrant
+
+## Editor files
+*~
+.*.sw?
+.sw?
