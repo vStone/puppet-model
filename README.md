@@ -14,4 +14,7 @@ The Vagrantfile has been tweaked to load his box definitions from within the
 vms folder. I use this little tweak to keep box configurations seperated. This
 is purely for easier management.
 
+NOTE: This vagrant file is only tested with vagrant 0.8.x!! I had some issues
+with 0.9.x.
+
 ## ...
