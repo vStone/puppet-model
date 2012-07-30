@@ -22,6 +22,33 @@ Good:
   }
 ```
 
+Better:
+
+```
+  class x::params(
+    $foo = 'bar',
+    $os_dep = undef,
+  ) {
+    $_os_dep = $os_dep ? {
+      undef    => $::operatingsystem ? {
+        /(?i:centos|redhat)/  => 'redhat_dep',
+        default               => 'default_dep',
+      },
+      default  => $os_dep,
+    }
+  }
+
+  class x (
+    $foo    = $::x::params::foo,
+    $os_dep = $::x::params::_os_dep,
+  ) inherits ::x::params  {
+
+    # VICTORY, I CAN OVERLOAD SHIT GLOBALLY, AND CLASS SPECIFIC!!
+
+  }
+
+```
+
 ## Don't configure repositories.
 
 You can list your required repositories as a requirement in your fine
