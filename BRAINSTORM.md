@@ -16,10 +16,16 @@ Bad:
 Good:
 
 ```
-  class x::params(
+  class x::params {
     $foo = 'bar'
-  ) {
   }
+
+  class x (
+    $foo = $::x::params::foo
+  ) inherits x::params {
+
+  }
+
 ```
 
 Better:
