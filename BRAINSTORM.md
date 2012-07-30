@@ -60,7 +60,7 @@ Better:
 
 You can list your required repositories as a requirement in your fine
 documentation, but don't force system admins to use a specific repository.
-In an environment where you need more controll over installed packages, this
+In an environment where you need more control over installed packages, this
 can be a mess to deal with.
 
 You can however include a definition for a repository, but don't include it
