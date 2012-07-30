@@ -87,8 +87,3 @@ Vagrant::Config.run do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 end
-
-addons_dir = File.expand_path('../vms', __FILE__)
-Dir.glob("#{addons_dir}/*/box.rb") do |vms_file|
-  load vms_file if File.file?(vms_file)
-end
