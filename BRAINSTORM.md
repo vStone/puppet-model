@@ -16,14 +16,15 @@ Bad:
 Good:
 
 ```
-  class x::params {
+  class x::params (
     $foo = 'bar'
+  ) {
+    $package = $::operatingsystem ? {}
   }
 
-  class x (
+  class x {
+    require x::params
     $foo = $::x::params::foo
-  ) inherits x::params {
-
   }
 
 ```
