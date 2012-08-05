@@ -8,5 +8,8 @@
 
 # Rspec testing
 
+# Generate documentation.
+* If github, push documentation to gh-pages?
+
 # Do Release
 * Use git notes to add information to the release about various thingies.
