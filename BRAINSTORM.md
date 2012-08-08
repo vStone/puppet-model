@@ -66,3 +66,19 @@ can be a mess to deal with.
 You can however include a definition for a repository, but don't include it
 by default. Allow the user to choose to do so.
 
+## Other stuff you should pay attention to
+
+* Always depend on the alias of a package, but not on the class that installs that package.
+* Include the following header in your templates files, taking that the target file supports some kind of commenting.
+
+```erb
+### File managed with puppet ###
+## Served by:        '<%= scope.lookupvar('::servername') %>'
+## Module:           '<%= scope.to_hash['module_name'] %>'
+## Template source:  '<%= template_source %>'
+```
+
+## Stuff to think about
+
+How are we going to version the hieradata folder?
+
