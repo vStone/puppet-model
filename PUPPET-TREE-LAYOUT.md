@@ -10,41 +10,47 @@ be simple for large environments and small.
 /etc/puppet
 ├── auth.conf
 ├── environments
-│   ├── 0.1
+│   ├── <version number> ex: 0.1
 │   │   ├── manifests
-│   │   │   ├── classes
-│   │   │   └── nodes
+│   │   │   ├── classes/
+│   │   │   └── nodes/
 │   │   └── modules
 │   │       ├── contrib
 │   │       │   └── foo
-│   │       │       ├── files
+│   │       │       ├── files/
 │   │       │       ├── manifests
 │   │       │       │   ├── init.pp
 │   │       │       │   ├── params.pp
 │   │       │       │   └── repo.pp
-│   │       │       └── templates
-│   │       ├── internal
-│   │       └── roles
-│   ├── <custom branch name>
+│   │       │       └── templates/
+│   │       ├── internal/
+│   │       └── roles/
+│   ├── development
 │   │   ├── manifests
-│   │   │   ├── classes
-│   │   │   └── nodes
+│   │   │   ├── classes/
+│   │   │   └── nodes/
 │   │   └── modules
-│   │       ├── contrib
-│   │       ├── internal
-│   │       └── roles
-│   └── development
+│   │       ├── contrib/
+│   │       ├── internal/
+│   │       └── roles/
+│   └── <custom environment name> (from a git branch maybe?)
 │       ├── manifests
-│       │   ├── classes
-│       │   └── nodes
+│       │   ├── classes/
+│       │   └── nodes/
 │       └── modules
-│           ├── contrib
-│           ├── internal
-│           └── roles
+│           ├── contrib/
+│           ├── internal/
+│           └── roles/
 ├── fileserver.conf
-├── manifests
-├── modules
-└── puppet.conf
+├── manifests/
+├── modules/
+├── hieradata
+│   ├── default/
+│   ├── <version number> ex: 0.1/
+│   ├── development/
+│   └── <custom environment name>/
+├── puppet.conf
+└── hiera.yaml
 
 ```
 
