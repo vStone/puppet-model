@@ -25,7 +25,7 @@ be simple for large environments and small.
 │   │       │       └── templates
 │   │       ├── internal
 │   │       └── roles
-│   ├── &lt;custom branch name&gt;
+│   ├── <custom branch name>
 │   │   ├── manifests
 │   │   │   ├── classes
 │   │   │   └── nodes
