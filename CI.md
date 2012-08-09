@@ -13,3 +13,14 @@
 
 # Do Release
 * Use git notes to add information to the release about various thingies.
+
+
+# Build Pipeline
+
+ "Parameter" job ->
+ Syntax testing ->
+ Style testing ->
+ Rspec testing ->
+ Documentation ->
+ Packaging ->
+ Release
