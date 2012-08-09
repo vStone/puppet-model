@@ -55,6 +55,14 @@ Better:
   }
 
 ```
+## sanity checks
+
+Check requirements on top of your class as much as possible
+Do a case statement to check for whatever you need to check and fail
+if something is unsupported.
+
+Every fail you use should be mentioned in the docs ofcourse.
+
 
 ## Don't configure repositories.
 
