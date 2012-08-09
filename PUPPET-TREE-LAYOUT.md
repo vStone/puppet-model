@@ -25,7 +25,7 @@ be simple for large environments and small.
 │   │       │       └── templates
 │   │       ├── internal
 │   │       └── roles
-│   ├── <custom branch name>
+│   ├── &lt;custom branch name&gt;
 │   │   ├── manifests
 │   │   │   ├── classes
 │   │   │   └── nodes
@@ -61,7 +61,7 @@ to provide at least a configuration set that will allow people to test
 this out in vagrant without a big hassle.
 
 This package will also make sure to have all the dependencies on
-technologies or tools we use in this _*purrrrfect*_ setup.
+technologies or tools we use in this setup.
 
 * Required set of dependencies
   * hieradata stuff
@@ -91,10 +91,10 @@ technologies or tools we use in this _*purrrrfect*_ setup.
       environment? also, docs.
 
 
-### puppet-tree-env-<name>
+### puppet-tree-env-&lt;name&gt;
 
 So, once we have the basics laid out out. We can install additional
-environments. These babies might certainly include our default set of modules. neatly setup in modules/purrrfect-puppet-installation-magic/<our-modules>
+environments. These babies might certainly include our default set of modules. neatly setup in modules/purrrfect-puppet-installation-magic/&lt;our-modules&gt;
 
 Document on how to make this the active environment for your puppetmaster
 so you can start doing awesome things like stored configs, enc and whatever.
