@@ -11,6 +11,7 @@ be simple for large environments and small.
 ├── auth.conf
 ├── environments
 │   ├── 0.1
+│   │   ├── hieradata
 │   │   ├── manifests
 │   │   │   ├── classes
 │   │   │   └── nodes
@@ -26,6 +27,7 @@ be simple for large environments and small.
 │   │       ├── internal
 │   │       └── roles
 │   ├── <custom branch name>
+│   │   ├── hieradata
 │   │   ├── manifests
 │   │   │   ├── classes
 │   │   │   └── nodes
@@ -34,6 +36,7 @@ be simple for large environments and small.
 │   │       ├── internal
 │   │       └── roles
 │   └── development
+│       ├── hieradata
 │       ├── manifests
 │       │   ├── classes
 │       │   └── nodes
