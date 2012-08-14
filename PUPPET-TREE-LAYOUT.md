@@ -111,3 +111,18 @@ Customize your puppetmaster who you can scratch with your eyes closed.
     who's gonna do Debian packages?
 * Required set of files
   * ?? whatever you want I suppose. Whatever you need :)
+* Package naming/versioning.
+
+  The environment name will be build with the following logic in mind:
+  * Is this a git repository? If not, you should provide the environment name
+    yourself.
+  * We're NOT on the master branch? If not, we will use the branch name as the
+    environment name. If a tag is set on the branch, we will append it to the
+    environment name (ex: <branch name>-<branch tag>). The version will be
+    the one provided or the default version '1.0'.
+  * On the master branch?
+    * A git tag has been set? Well, you should really do this.
+      We'll warn about this and set the environment name to master.
+    * You have a git tag, this will be the environment name. The version
+      will be the version provided or the default version '1.0'.
+
