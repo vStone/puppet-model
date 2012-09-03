@@ -1,9 +1,9 @@
-= Introduction
+# Introduction
 
 This is a abstract on how development on a puppet tree can/should be done to
 be most effective and easy to use/understand by everyone.
 
-= Components
+# Components
 
 We will first start off by defining a couple of components that make a complete
 puppet tree.
@@ -17,7 +17,7 @@ puppet tree.
 Some of these obviously also intersect and the order is hard to determine,
 they are all equally important and part of the tree.
 
-= Scenario
+# Scenario
 
 How should the ideal scenario look like.
 
@@ -38,6 +38,6 @@ How should the ideal scenario look like.
 * We install the released package to the puppetmaster
 * Switch agents to the new puppet environment.
 
-= Some question marks remain...
+# Some question marks remain...
 
 * How do we update the puppet agents to the new environment? (mcollective ?)
